@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './utils/styles.dart';
 import './pages_export.dart';
 
 void main() {
@@ -12,8 +13,9 @@ class MyApp extends StatelessWidget {
       title: 'Student Portal',
       initialRoute: '/',
       theme: ThemeData(
-        fontFamily: 'Lato'
-      ),
+          primaryColor: Styles.primaryColor,
+          accentColor: Styles.subHeadingColor,
+          fontFamily: 'Lato'),
       routes: {'/': (context) => SplashPage()},
     );
   }
