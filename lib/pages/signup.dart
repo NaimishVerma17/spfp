@@ -36,11 +36,11 @@ class _SignupPage extends State<SignupPage> {
               children: <Widget>[
                 Image(
                   image: AssetImage('assets/images/user.png'),
-                  height: 100.0,
-                  width: 100.0,
+                  height: 75.0,
+                  width: 75.0,
                 ),
                 Text(
-                  'Login',
+                  'Register Yourself',
                   style: Styles.headingText(),
                 ),
                 SizedBox(
@@ -51,23 +51,27 @@ class _SignupPage extends State<SignupPage> {
                   child: Column(
                     children: <Widget>[
                       TextFormField(
-                        maxLength: 7,
-                        keyboardType: TextInputType.number,
+                        keyboardType: TextInputType.text,
                         decoration: Styles.getInputDecoration('Student Name'),
                         onSaved: (value) {
                           this._studentName = value;
                         },
                       ),
+                      SizedBox(
+                        height: 15.0,
+                      ),
                       TextFormField(
-                        maxLength: 7,
-                        keyboardType: TextInputType.number,
+                        keyboardType: TextInputType.emailAddress,
                         decoration: Styles.getInputDecoration('Student Email'),
                         onSaved: (value) {
                           this._studentEmail = value;
                         },
                       ),
+                      SizedBox(
+                        height: 15.0,
+                      ),
                       TextFormField(
-                        maxLength: 7,
+                        maxLength: 10,
                         keyboardType: TextInputType.number,
                         decoration: Styles.getInputDecoration('Roll no.'),
                         onSaved: (value) {
@@ -99,14 +103,14 @@ class _SignupPage extends State<SignupPage> {
                   height: 12.0,
                 ),
                 CustomButton(
-                  text: 'Login',
-                  onClick: _isLoading ? null : _login,
+                  text: 'Register',
+                  onClick: _isLoading ? null : _register,
                 ),
                 SizedBox(
                   height: 15.0,
                 ),
                 Text(
-                  'By signing in, you agree to our Terms and Conditions.',
+                  'By registering, you agree to our Terms and Conditions.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       fontSize: 14.0,
@@ -121,7 +125,7 @@ class _SignupPage extends State<SignupPage> {
     );
   }
 
-  _login() {
+  _register() {
     _globalKey.currentState.save();
     print('Student name: ' + this._studentName.toString());
     print('Student email: ' + this._studentEmail.toString());
