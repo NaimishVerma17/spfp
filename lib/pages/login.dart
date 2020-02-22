@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:student_portal/widgets/custom_button.dart';
-import 'package:student_portal/services/auth_service.dart';
-import 'package:student_portal/utils/Validators.dart';
-import 'package:student_portal/utils/route_utils.dart';
 import 'package:student_portal/utils/styles.dart';
 
 class LoginPage extends StatefulWidget {
@@ -15,7 +12,8 @@ class LoginPage extends StatefulWidget {
 class _LoginPage extends State<LoginPage> {
   final GlobalKey<FormState> _globalKey = new GlobalKey();
   bool _isLoading = false;
-  String _phoneNo;
+  String _studentNo;
+  String _password;
 
   @override
   void initState() {
@@ -55,15 +53,26 @@ class _LoginPage extends State<LoginPage> {
                 ),
                 Form(
                   key: _globalKey,
-                  child: TextFormField(
-                    maxLength: 10,
-                    keyboardType: TextInputType.number,
-                    validator: Validators.validatePhoneNo,
-                    decoration: Styles.getInputDecoration(
-                        'Enter your 10 digit mobile no.'),
-                    onSaved: (value) {
-                      _phoneNo = value;
-                    },
+                  child: Column(
+                    children: <Widget>[
+                      TextFormField(
+                        maxLength: 7,
+                        keyboardType: TextInputType.number,
+                        decoration: Styles.getInputDecoration('Student No.'),
+                        onSaved: (value) {
+                          this._studentNo = value;
+                        },
+                      ),
+                      TextFormField(
+                        maxLength: 10,
+                        obscureText: true,
+                        keyboardType: TextInputType.text,
+                        decoration: Styles.getInputDecoration('Password'),
+                        onSaved: (value) {
+                          this._password = value;
+                        },
+                      ),
+                    ],
                   ),
                 ),
                 _isLoading ? CircularProgressIndicator() : Container(),
@@ -94,5 +103,7 @@ class _LoginPage extends State<LoginPage> {
   }
 
   _login() async {
+    print('Student number: ' + this._studentNo);
+    print('Password: ' + this._password);
   }
 }
