@@ -37,16 +37,8 @@ class _LoginPage extends State<LoginPage> {
                   width: 100.0,
                 ),
                 Text(
-                  'Login using OTP',
+                  'Login',
                   style: Styles.headingText(),
-                ),
-                SizedBox(
-                  height: 15.0,
-                ),
-                Text(
-                  'Enter your mobile number, we will send you an OPT to verify.',
-                  textAlign: TextAlign.center,
-                  style: Styles.subHeadingText(),
                 ),
                 SizedBox(
                   height: 30.0,
@@ -102,8 +94,9 @@ class _LoginPage extends State<LoginPage> {
     );
   }
 
-  _login() async {
-    print('Student number: ' + this._studentNo);
-    print('Password: ' + this._password);
+  _login() {
+    _globalKey.currentState.save();
+    print('Student number: ' + this._studentNo.toString());
+    print('Password: ' + this._password.toString());
   }
 }
