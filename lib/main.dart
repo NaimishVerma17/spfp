@@ -22,7 +22,9 @@ class MyApp extends StatelessWidget {
         '/register': (context) => SignupPage(),
         '/forget-password': (context) => ForgetPasswordPage(),
         '/reset-password': (context) => ResetPasswordPage(),
-        '/home': (context) => HomePage()
+        '/home': (context) => HomePage(),
+        '/reminder': (context) => ReminderPage(),
+        '/add-reminder': (context) => AddReminderPage()
       },
     );
   }
