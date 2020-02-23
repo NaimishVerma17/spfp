@@ -20,7 +20,10 @@ Optimized way to communicate with students and provide them a better experience 
         iconTheme: IconThemeData(color: Styles.primaryColor),
       ),
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 20.0,vertical: 10.0),
+        padding: EdgeInsets.symmetric(
+          horizontal: 20.0,
+          vertical: 10.0,
+        ),
         color: Styles.homeBackgroundColor,
         child: SingleChildScrollView(
           child: Center(
@@ -56,7 +59,12 @@ Optimized way to communicate with students and provide them a better experience 
                 SizedBox(
                   height: 5.0,
                 ),
-                Text('v0.0.1',style: TextStyle(fontSize: 20.0),)
+                Text(
+                  'v0.0.1',
+                  style: TextStyle(
+                    fontSize: 20.0,
+                  ),
+                )
               ],
             ),
           ),
