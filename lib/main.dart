@@ -17,7 +17,10 @@ class MyApp extends StatelessWidget {
           accentColor: Styles.subHeadingColor,
           fontFamily: 'Lato'),
       routes: {
-        '/': (context) => LandingPage()},
+        '/': (context) => LandingPage(),
+        '/login': (context) => LoginPage(),
+        '/register': (context) => SignupPage()
+      },
     );
   }
 }
