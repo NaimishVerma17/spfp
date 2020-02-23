@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:student_portal/utils/styles.dart';
-import 'package:student_portal/widgets/custom_button.dart';
 
 class LandingPage extends StatelessWidget {
   @override
