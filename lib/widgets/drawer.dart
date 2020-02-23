@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:student_portal/utils/styles.dart';
 
-class KisaanDrawer extends StatelessWidget {
+class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
