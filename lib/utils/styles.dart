@@ -21,7 +21,7 @@ abstract class Styles {
   static TextStyle drawerItemsText() {
     return TextStyle(
         color: Colors.white,
-        fontSize: 16.0,
+        fontSize: 18.0,
         letterSpacing: 1.2,
         fontWeight: FontWeight.w500);
   }
