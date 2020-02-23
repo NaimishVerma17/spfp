@@ -8,7 +8,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       drawer: MyDrawer(),
       appBar: AppBar(
-        title: Text('Cart', style: Styles.pageTitleText()),
+        title: Text('Home', style: Styles.pageTitleText()),
         elevation: 3.0,
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(color: Styles.primaryColor),

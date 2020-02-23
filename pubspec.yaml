@@ -47,6 +47,7 @@ flutter:
     - assets/images/add_icon.png
     - assets/images/minus.png
     - assets/images/student.png
+    - assets/images/drawer-icon.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

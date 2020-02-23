@@ -115,5 +115,6 @@ class _LoginPage extends State<LoginPage> {
     _globalKey.currentState.save();
     print('Student number: ' + this._studentNo.toString());
     print('Password: ' + this._password.toString());
+    Navigator.pushNamed(context, '/home');
   }
 }
