@@ -35,13 +35,21 @@ class LandingPage extends StatelessWidget {
                   SizedBox(
                     height: 30.0,
                   ),
+                  Text(
+                    'A helper app for student of Ajay Kumar Garg Engineering College to manage their acedemic records and daily time table!',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.w500,
+                        color: Styles.subHeadingColor),
+                  ),
                 ],
               ),
             ),
             Container(
               color: Styles.primaryColor,
               width: MediaQuery.of(context).size.width,
-              height: 70.0,
+              height: 60.0,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
