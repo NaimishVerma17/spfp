@@ -84,5 +84,6 @@ class _ForgetPasswordPage extends State<ForgetPasswordPage> {
   _submit() {
     _globalKey.currentState.save();
     print('Student email: ' + this._studentEmail.toString());
+    Navigator.pushNamed(context, '/reset-password');
   }
 }

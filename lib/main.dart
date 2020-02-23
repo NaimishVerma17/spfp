@@ -20,7 +20,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => LandingPage(),
         '/login': (context) => LoginPage(),
         '/register': (context) => SignupPage(),
-        '/forget-password': (context) => ForgetPasswordPage()
+        '/forget-password': (context) => ForgetPasswordPage(),
+        '/reset-password': (context) => ResetPasswordPage()
       },
     );
   }
