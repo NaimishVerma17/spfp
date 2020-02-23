@@ -19,7 +19,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => LandingPage(),
         '/login': (context) => LoginPage(),
-        '/register': (context) => SignupPage()
+        '/register': (context) => SignupPage(),
+        '/forget-password': (context) => ForgetPasswordPage()
       },
     );
   }

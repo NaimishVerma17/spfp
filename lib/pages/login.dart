@@ -86,6 +86,23 @@ class _LoginPage extends State<LoginPage> {
                       fontWeight: FontWeight.w500,
                       color: Styles.subHeadingColor),
                 ),
+                SizedBox(
+                  height: 15.0,
+                ),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, '/forget-password');
+                  },
+                  child: Text(
+                    'Forget Password',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        decoration: TextDecoration.underline,
+                        fontSize: 18.0,
+                        fontWeight: FontWeight.w500,
+                        color: Styles.subHeadingColor),
+                  ),
+                ),
               ],
             ),
           ),
