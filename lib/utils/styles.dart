@@ -34,6 +34,20 @@ abstract class Styles {
         fontWeight: FontWeight.w800);
   }
 
+  static TextStyle titleText() {
+    return TextStyle(
+        fontSize: 22.0,
+        letterSpacing: 1.2,
+        fontWeight: FontWeight.w700);
+  }
+
+  static TextStyle subTitleText() {
+    return TextStyle(
+        fontSize: 18.0,
+        letterSpacing: 1.1,
+        fontWeight: FontWeight.w600);
+  }
+
   static TextStyle subHeadingText() {
     return TextStyle(
         color: subHeadingColor, fontSize: 14.0, fontWeight: FontWeight.w500);

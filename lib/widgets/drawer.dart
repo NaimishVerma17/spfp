@@ -56,7 +56,7 @@ class MyDrawer extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                Navigator.of(context).pop();
+                _navigateToPage('/reminder', context);
               },
               leading: Icon(
                 Icons.alarm,
