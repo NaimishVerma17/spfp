@@ -16,7 +16,8 @@ class MyApp extends StatelessWidget {
           primaryColor: Styles.primaryColor,
           accentColor: Styles.subHeadingColor,
           fontFamily: 'Lato'),
-      routes: {'/': (context) => LandingPage()},
+      routes: {
+        '/': (context) => LandingPage()},
     );
   }
 }
