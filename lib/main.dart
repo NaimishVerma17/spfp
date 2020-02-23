@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
           primaryColor: Styles.primaryColor,
           accentColor: Styles.subHeadingColor,
           fontFamily: 'Lato'),
-      routes: {'/': (context) => ResetPasswordPage()},
+      routes: {'/': (context) => LandingPage()},
     );
   }
 }
