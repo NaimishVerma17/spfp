@@ -37,8 +37,8 @@ class MyDrawer extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                Navigator.of(context).pop();
-              },
+                _navigateToPage('/notes', context);
+                },
               leading: Icon(
                 Icons.note,
                 size: 24.0,
