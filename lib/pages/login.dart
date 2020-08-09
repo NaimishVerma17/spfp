@@ -56,7 +56,7 @@ class _LoginPage extends State<LoginPage> {
                         },
                       ),
                       TextFormField(
-                        maxLength: 10,
+                        maxLength: 15,
                         obscureText: true,
                         keyboardType: TextInputType.text,
                         decoration: Styles.getInputDecoration('Password'),
@@ -115,6 +115,8 @@ class _LoginPage extends State<LoginPage> {
     _globalKey.currentState.save();
     print('Student number: ' + this._studentNo.toString());
     print('Password: ' + this._password.toString());
-    Navigator.pushNamed(context, '/home');
+//    if (this._studentNo == '1613008' && this._password == 'Naimish@1998') {
+      Navigator.pushNamed(context, '/home');
+//    }
   }
 }

@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:student_portal/models/notes.model.dart';
 import 'package:student_portal/utils/styles.dart';
