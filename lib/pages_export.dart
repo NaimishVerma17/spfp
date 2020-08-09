@@ -6,3 +6,4 @@ export './pages/reset_password.dart';
 export './pages/home.dart';
 export './pages/reminder.dart';
 export './pages/notes.dart';
+export './pages/timetable.dart';

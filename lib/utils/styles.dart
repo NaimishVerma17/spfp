@@ -52,6 +52,10 @@ abstract class Styles {
     return TextStyle(
         color: subHeadingColor, fontSize: 14.0, fontWeight: FontWeight.w500);
   }
+  static TextStyle subCellTextHead() {
+    return TextStyle(
+        color: subHeadingColor, fontSize: 14.0, fontWeight: FontWeight.w700);
+  }
 
   static TextStyle labelText() {
     return TextStyle(fontSize: 17.0, fontWeight: FontWeight.w500);

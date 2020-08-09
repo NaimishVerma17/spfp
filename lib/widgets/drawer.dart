@@ -75,7 +75,7 @@ class MyDrawer extends StatelessWidget {
             ),
             ListTile(
               onTap: () {
-                Navigator.of(context).pop();
+                _navigateToPage('/timetable', context);
               },
               leading: Icon(
                 Icons.table_chart,

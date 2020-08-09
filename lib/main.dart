@@ -24,7 +24,8 @@ class MyApp extends StatelessWidget {
         '/reset-password': (context) => ResetPasswordPage(),
         '/home': (context) => HomePage(),
         '/reminder': (context) => ReminderPage(),
-        '/notes':(context) => NotesPage()
+        '/notes': (context) => NotesPage(),
+        '/timetable': (context) => TimetablePage()
       },
     );
   }
